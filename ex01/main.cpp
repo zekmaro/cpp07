@@ -6,7 +6,7 @@
 /*   By: anarama <anarama@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:41:19 by anarama           #+#    #+#             */
-/*   Updated: 2024/10/19 13:06:33 by anarama          ###   ########.fr       */
+/*   Updated: 2024/11/01 16:08:46 by anarama          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,4 @@ int main(void) {
 	std::cout << sentence << std::endl;
 	return 0;
 }
+
