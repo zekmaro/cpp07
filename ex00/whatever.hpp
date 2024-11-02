@@ -6,7 +6,7 @@
 /*   By: anarama <anarama@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 11:55:25 by anarama           #+#    #+#             */
-/*   Updated: 2024/10/19 12:36:02 by anarama          ###   ########.fr       */
+/*   Updated: 2024/11/02 11:49:18 by anarama          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void swap(T &a, T &b) {
 }
 
 template <typename T>
-T min(T a, T b) {
+T min(const T& a, const T& b) {
 	if (a < b) {
 		return a;
 	} else {
@@ -32,7 +32,7 @@ T min(T a, T b) {
 }
 
 template <typename T>
-T max(T a, T b) {
+T max(const T& a, const T& b) {
 	if (a > b) {
 		return a;
 	} else {

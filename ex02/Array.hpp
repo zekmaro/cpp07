@@ -6,7 +6,7 @@
 /*   By: anarama <anarama@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 13:09:57 by anarama           #+#    #+#             */
-/*   Updated: 2024/10/19 14:01:38 by anarama          ###   ########.fr       */
+/*   Updated: 2024/11/02 13:56:54 by anarama          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ARRAY_HPP
 
 # include <exception>
+# include <cstdlib>
 
 # define DEFAULT_ARR NULL
 # define DEFAULT_SIZE 0
@@ -21,8 +22,8 @@
 template <typename T>
 class Array {
 	private:
-		unsigned int	_size;
 		T*				_arr;
+		unsigned int	_size;
 	public:
 		Array( void ) : _arr(DEFAULT_ARR), _size(DEFAULT_SIZE) {
 			this->_arr = new T[DEFAULT_SIZE];
@@ -35,7 +36,7 @@ class Array {
 		Array( const Array& other ) : _size(other._size) {
 			if (other._arr != NULL) {
 				this->_arr = new T[this->_size];
-				for (int i = 0; i < other._size; i++) {
+				for (unsigned int i = 0; i < other._size; i++) {
 					this->_arr[i] = other._arr[i];
 				}
 			} else {

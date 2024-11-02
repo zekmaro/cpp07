@@ -6,19 +6,19 @@
 #    By: anarama <anarama@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/19 11:54:40 by anarama           #+#    #+#              #
-#    Updated: 2024/10/19 12:50:29 by anarama          ###   ########.fr        #
+#    Updated: 2024/11/02 13:34:59 by anarama          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC		:= c++
 
-NAME	:= iter
+NAME	:= array
 
 CFLAGS	:= -Wall -Wextra -Werror -std=c++98
 
 OBJDIR	:= obj
 
-HEADERS	:=	iter.hpp
+HEADERS	:=	Array.hpp
 
 SRC		:=	main.cpp
 
